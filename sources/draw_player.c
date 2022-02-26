@@ -12,8 +12,8 @@
 
 #include "so_long.h"
 
-void	draw_player(t_all *all, int pos_x, int pos_y)
+void	draw_player(t_all *all, int j, int i)
 {
 	mlx_put_image_to_window(all->mlx.ptr, all->mlx.win,
-		all->txt.player.img, pos_x * all->tile_size, pos_y * all->tile_size);
+		all->txt.player.img, i * all->tile_size, j * all->tile_size);
 }

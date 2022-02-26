@@ -6,7 +6,7 @@
 #    By: jfremond <jfremond@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/28 22:15:55 by jfremond          #+#    #+#              #
-#    Updated: 2022/02/25 15:54:52 by user42           ###   ########.fr        #
+#    Updated: 2022/02/26 15:27:33 by jfremond         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,6 +73,7 @@ S_SRC	=	check_error_args.c			\
 			check_validity_texture.c	\
 			clean_exit.c				\
 			draw_collectibles.c			\
+			draw_fixed_elements.c		\
 			draw_game.c					\
 			draw_player.c				\
 			free_tab.c					\

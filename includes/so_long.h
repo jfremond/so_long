@@ -6,7 +6,7 @@
 /*   By: jfremond <jfremond@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:43:30 by jfremond          #+#    #+#             */
-/*   Updated: 2021/12/12 09:57:07 by jfremond         ###   ########.fr       */
+/*   Updated: 2022/02/26 15:26:01 by jfremond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,10 +125,11 @@ void	set_screen_size(t_all *all);
 void	set_drawing_size(t_all *all);
 
 /* Draw the game */
-void	get_player_position(t_all *all);
+void	get_player_position(t_all *all, int j, int i);
 void	draw_game(t_all *all);
-void	draw_collectibles(t_all *all);
-void	draw_player(t_all *all, int pos_x, int pos_y);
+void	draw_fixed_elements(t_all *all, int j, int i);
+void	draw_collectibles(t_all *all, int j, int i);
+void	draw_player(t_all *all, int j, int i);
 
 /* Events */
 int		key_press(int keycode, t_all *all);
