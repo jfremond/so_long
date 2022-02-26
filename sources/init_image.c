@@ -6,7 +6,7 @@
 /*   By: jfremond <jfremond@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 17:04:37 by jfremond          #+#    #+#             */
-/*   Updated: 2022/01/26 11:40:14 by jfremond         ###   ########.fr       */
+/*   Updated: 2022/02/26 15:37:36 by jfremond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,6 @@ t_img	init_image(t_all *all, char *pathfile)
 
 	img.img = mlx_xpm_file_to_image(all->mlx.ptr, pathfile,
 			&img.width, &img.height);
-	img.addr = (int *)mlx_get_data_addr(img.img, &img.bpp,
-			&img.line_length, &img.endian);
-	if (!img.addr)
-		clean_exit(all);
 	return (img);
 }
 

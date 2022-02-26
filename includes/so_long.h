@@ -6,7 +6,7 @@
 /*   By: jfremond <jfremond@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:43:30 by jfremond          #+#    #+#             */
-/*   Updated: 2022/02/26 15:26:01 by jfremond         ###   ########.fr       */
+/*   Updated: 2022/02/26 15:38:43 by jfremond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,10 +60,6 @@ typedef struct s_map
 typedef struct s_img
 {
 	void	*img;
-	int		*addr;
-	int		bpp;
-	int		line_length;
-	int		endian;
 	int		height;
 	int		width;
 }				t_img;

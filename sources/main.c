@@ -6,7 +6,7 @@
 /*   By: jfremond <jfremond@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 22:59:32 by jfremond          #+#    #+#             */
-/*   Updated: 2022/01/26 11:40:14 by jfremond         ###   ########.fr       */
+/*   Updated: 2022/02/26 15:43:20 by jfremond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ static void	create_mlx_window(t_all *all)
 			all->max_width, all->max_height, "so_long");
 	all->img.img = mlx_new_image(all->mlx.ptr,
 			all->max_width, all->max_height);
-	all->img.addr = (int *)mlx_get_data_addr(all->img.img, &all->img.bpp,
-			&all->img.line_length, &all->img.endian);
 }
 
 static void	hook_functions(t_all *all)
